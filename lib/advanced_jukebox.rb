@@ -42,10 +42,8 @@ def play(my_songs)
   song_array=list(my_songs)
   puts "What song would you like to hear?"
   song_choice=gets.chomp
-  #binding.pry
   if song_array.include?(song_choice)
-    puts "#{my_songs["Go Go GO"]}"
-    system "open #{my_songs["Go Go GO"]}"
+    system "open #{my_songs[song_choice]}"
   else puts "That is not a song on the list"
   end
 end
